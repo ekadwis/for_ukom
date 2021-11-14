@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #F6F8FD;
+}
+
+.logout {
+    text-decoration: none;
+}
+
+.logout:hover {
+    color: aqua;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-margin {
+    margin: 0 90px;
+}
+
+.list-data {
+    margin-left: 1px;
+}
+
+.button-size {
+    width: 100%;
+}
+
+.card-img-size {
+    width: 200px;
+    height: 130px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.line-height {
+    line-height: 80px;
+}
+
