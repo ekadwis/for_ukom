@@ -41,6 +41,8 @@ $routes->get('/delete/(:any)', 'BarangController::delete/$1');
 $routes->get('/edit/(:any)', 'BarangController::edit/$1');
 $routes->post('/save', 'BarangController::save');
 $routes->get('/barang-keluar', 'BarangKeluarController::index');
+$routes->get('/detail/(:any)', 'BarangController::detail/$1');
+
 
 /*
  * --------------------------------------------------------------------

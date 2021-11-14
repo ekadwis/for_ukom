@@ -102,4 +102,15 @@ class BarangController extends BaseController
 
         return redirect()->to('/barang');
     }
+
+    public function detail($id)
+    {
+
+        $data = [
+            'title' => 'Detail',
+            'result' => $this->BarangModel->find($id)
+        ];
+
+        return view('aksi/detail', $data);
+    }
 }

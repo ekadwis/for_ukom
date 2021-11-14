@@ -34,4 +34,3 @@
 
 
 <?= $this->endSection(); ?>
-<?= $this->include('layouts/footer'); ?>

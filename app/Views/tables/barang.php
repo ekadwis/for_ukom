@@ -88,9 +88,9 @@
                     <div class="card-body">
                         <h5 class="card-title fs-5" style="height: 50px;"><?= $results['nama_barang']; ?> </h5>
                         <span class="justify-content-center">
-                            <a href="#" class="btn btn-outline-primary" style="width: 60%;">Detail</a>
-                            <a href="/edit/<?= $results['id_barang']; ?>" class="btn btn-secondary"><i class=" fas fa-edit"></i></a>
-                            <a href="/delete/<?= $results['id_barang']; ?>" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
+                            <a href="/detail/<?= $results['id_barang']; ?>" class="btn btn-outline-primary" style="width: 60%;">Detail</a>
+                            <a href="/edit/<?= $results['id_barang']; ?>" class="btn btn-secondary" title="Edit"><i class=" fas fa-edit"></i></a>
+                            <a href="/delete/<?= $results['id_barang']; ?>" class="btn btn-secondary" title="Hapus"><i class="fas fa-trash"></i></a>
                         </span>
                     </div>
                 </div>
