@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded">
     <div class="container-fluid">
-        <a class="navbar-brand ps-5 text-primary fw-bold poppins fs-5" href="#">Inventaris</a>
+        <a class="navbar-brand ps-5" href="#"><img src="/img/logo.jpeg" alt="" style="height: 50px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

@@ -75,7 +75,14 @@
         </div>
     </div>
 </div>
-
+<div class="container pt-4">
+    <?php if (session()->getFlashdata('msg')) : ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?= session()->getFlashdata('msg'); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
+</div>
 <p class="list-data">Barang</p>
 
 

@@ -1,6 +1,14 @@
 <?= $this->extend('layouts/template'); ?>
 
 <?= $this->section('content'); ?>
+<div class="container pt-4">
+    <?php if (session()->getFlashdata('msg')) : ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?= session()->getFlashdata('msg'); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
+</div>
 <h3>Dashboard</h3>
 <p class="list-data">List Data Barang</p>
 

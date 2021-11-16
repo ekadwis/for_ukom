@@ -16,7 +16,11 @@ class LoginController extends BaseController
     }
     public function index()
     {
-        return view('auth/login');
+        $data = [
+            'title' => 'Form Login'
+        ];
+
+        return view('auth/login', $data);
     }
 
     public function postlogin()
@@ -29,7 +33,7 @@ class LoginController extends BaseController
             return redirect()->to('/login');
         }
 
-        if ($password == $log->password) {
+        if (password_verify($password, $log->password)) {
             $data = [
                 'login' => true,
                 'username' => $log->username,
@@ -37,7 +41,7 @@ class LoginController extends BaseController
             ];
             session()->set($data);
 
-            return redirect()->to('/');
+            return redirect()->to('/')->with('msg', 'Berhasil Login');
         }
     }
 

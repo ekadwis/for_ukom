@@ -15,6 +15,8 @@ class BarangController extends BaseController
     }
     public function index()
     {
+
+
         $query = $this->BarangModel->query('SELECT newkodebarang()');
         $kodebarang = $query->getRow();
         foreach ($kodebarang as $newkodebarang);
@@ -52,7 +54,7 @@ class BarangController extends BaseController
 
         $this->BarangModel->insert($data);
 
-        return redirect()->to('/barang');
+        return redirect()->to('/barang')->with('msg', 'Barang berhasil ditambahkan.');
     }
 
 
